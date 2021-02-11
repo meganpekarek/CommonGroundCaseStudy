@@ -1,0 +1,70 @@
+html {
+    --background-color: #EDEDED;
+    --text-color: #313131;
+    --side-page-padding: 4rem;
+    --font-size-big-quote: 3rem;
+    --line-height-big-quote: 6rem;
+}
+
+@media only screen and (max-width: 800px) {
+    html {
+        --side-page-padding: 1rem;
+        --font-size-big-quote: 1.5rem;
+        --line-height-big-quote: 3rem;
+    }
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+    padding: 0 var(--side-page-padding);
+    width: 100%;
+}
+
+.app__contentSeparator {
+    width: 40%;
+    margin: 4rem 0;
+    border: 3px solid var(--text-color);
+    opacity: 100%;
+}
+
+.projOverview__quoteWrapper {
+    margin: 7rem 0;
+}
+
+.projOverview__leftLeaves {
+    position: absolute;
+    left: 0;
+    width: 30%;
+    top: 40%;
+}
+
+.projOverview__rightLeaves {
+    position: absolute;
+    right: 0;
+    width: 30%;
+    top: 40%;
+}
+
+.projOverview__gabeQuote {
+    line-height: var(--line-height-big-quote);
+    font-size: var(--font-size-big-quote);
+    width: 60%;
+    text-align: center;
+    font-weight: 100;
+}
+
+.projOverview__gabeName {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 200;
+}
+
+.projOverview__gabeTitle {
+    font-weight: 100;
+}
+
+.projOverview__bulletinQuote {
+    line-height: 2.5rem;
+    margin: 4rem 0;
+}
